@@ -6,12 +6,11 @@ access key ID: AKIATDGHMRLCBX4MNVEG
 secret access key: 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
 region: eu-north-1
 
-We can now set those credentials as environment variables. 
-`export AWS_ACCESS_KEY_ID=AKIATDGHMRLCBX4MNVEG`{{execute}}
-
-`export AWS_SECRET_ACCESS_KEY=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`{{execute}}
-
-`export AWS_DEFAULT_REGION=eu-north-1`{{execute}}
+We can now set those credentials as environment variables. Let's use the aws-cli command to set up our system. 
+`aws configure`{{execute}}
+`AWS_ACCESS_KEY_ID = AKIATDGHMRLCBX4MNVEG`
+`AWS_SECRET_ACCESS_KEY = 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`
+`AWS_DEFAULT_REGION = eu-north-1`
 
 You should now be able to connect as a tester to AWS using aws-cli.
 `aws iam get-user`{{execute}}
