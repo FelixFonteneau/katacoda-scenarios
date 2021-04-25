@@ -2,10 +2,6 @@ In this part of the tutorial, we will set up the system to access AWS services.
 
 We will use the IAM (Identity and Access Management) service of AWS. A user has been created for this tutorial, with an access key ID, a secret access key and an associated region.
 
-access key ID: AKIATDGHMRLCBX4MNVEG
-secret access key: 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
-region: eu-north-1
-
 We can now set those credentials as environment variables. Let's use the aws-cli command to set up our system. 
 `aws configure`{{execute}}
 `AWS_ACCESS_KEY_ID = AKIATDGHMRLCBX4MNVEG`
