@@ -57,4 +57,7 @@ You can now create a client and check your info. Let's update our main function:
         (print)))
 </pre>
 
-Let's now run our code! `lein run`{{execute}}
+Let's now run our code! 
+- `lein run`{{execute}}
+
+You should be able to see json format of the user!
