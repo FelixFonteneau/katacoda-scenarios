@@ -3,7 +3,7 @@ In this step, we are finally going to use AWS services. For this tutorial, we ar
 This service allows users to run serverless computation. We have prepared a lambda function called function-test-1 and we will now call it from the REPL.
 
 In your REPL, use the client that we created at the last step to see the lists of operations that you can use. 
-(def lambda (aws/client {:api :lambda}))
+`(def lambda (aws/client {:api :lambda}))`
 `(-> (aws/ops lambda) keys sort)`
 
 We can see from this the operations that we can perform. Let's try to run our function. 
