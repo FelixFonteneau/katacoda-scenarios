@@ -50,9 +50,6 @@ You can now launch the REPL `lein repl`{{execute}} and create a client:
 `(aws/invoke iam {:op :GetUser})`{{execute}}
 
 <pre class="file" data-filename="aws-api-tutorial/src/aws_api_tutorial/core.clj" 
-    data-target="insert" 
-    data-marker='"I don\'t do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!")'>
+    data-target="replace">
 okokok
 </pre>
