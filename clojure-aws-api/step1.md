@@ -8,7 +8,7 @@ please see documentation to install [Leiningen](https://leiningen.org/) or other
 
 Then we create a project, `lein new app aws-api-tutorial`{{execute}}.
 
-Once done, you should have the main script file here: `aws-api-tutorial/src/aws-api-tutorial/core.clj`{{open}} with a Hello World. 
+Once done, you should have the main script file here: `aws-api-tutorial/src/aws_api_tutorial/core.clj`{{open}} with a Hello World. 
 
 Go to the project directory `cd aws-api-tutorial`{{execute}}, and start the REPL `lein repl`. 
 You should see the result of the hello world with the function call `(-main)`{{execute}}.
