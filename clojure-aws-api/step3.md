@@ -52,9 +52,9 @@ You can now launch the REPL `lein repl`{{execute}} and create a client:
 (defn -main 
   "main"
   [& args]
-  
-  ( -> (aws/client {:api :iam})
-      (aws/invoke {:op :GetUser}))
-)
+  ( ->  (aws/client {:api :iam})
+        (aws/invoke {:op :GetUser})
+        (print)))
+
 
 </pre>
