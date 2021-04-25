@@ -13,7 +13,7 @@ and the service(s) of your choice, we will use in this tutorial
 
 To install the dependencies in our Leiningen project, we will modify the file `aws-api-tutorial/project.clj`{{open}}.
 
-We will add the following code to the :dependencies value,
+We will add the following code to the dependencies value:
 <pre class="file" data-filename="aws-api-tutorial/project.clj" 
     data-target="insert" 
     data-marker=':dependencies [[org.clojure/clojure "1.10.1"]]'>
