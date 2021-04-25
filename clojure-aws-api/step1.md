@@ -10,7 +10,7 @@ Then we create a project, `lein new app aws-api-tutorial`{{execute}}.
 
 Once done, you should have the main script file here: `aws-api-tutorial/src/aws_api_tutorial/core.clj`{{open}} with a Hello World. 
 
-Go to the project directory `cd aws-api-tutorial`{{execute}}, and start the REPL `lein repl`. 
+Go to the project directory `cd aws-api-tutorial`{{execute}}, and start the REPL `lein repl`{{execute}}. 
 You should see the result of the hello world with the function call `(-main)`{{execute}}.
 
 Then you can quit the REPL with either `(quit)`{{execute}}, either by pressing `ctrl d`.
