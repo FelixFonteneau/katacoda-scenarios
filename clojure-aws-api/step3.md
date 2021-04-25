@@ -3,7 +3,7 @@ In this part of the tutorial, we will set up the system to access AWS services.
 
 We will use the IAM (Identity and Access Management) service of AWS. A user has been created for this tutorial, with an access key ID, a secret access key and an associated region.
 
-_(note that the following key is useless and only serve as an example, no general access or service is attached to it)_
+_(note that the following key is useless and only serve as an example, no general access or important service is attached to it)_
 
 ## AWS-CLI configuration
 
