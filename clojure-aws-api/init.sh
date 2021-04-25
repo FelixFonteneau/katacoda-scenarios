@@ -10,4 +10,4 @@ chmod +x linux-install-1.10.2.774.sh
 sudo ./linux-install-1.10.2.774.sh
 
 # installing aws-cli
-sudo apt-get install aws
+sudo apt-get install awscli
