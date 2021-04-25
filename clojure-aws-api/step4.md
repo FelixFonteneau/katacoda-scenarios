@@ -1,14 +1,14 @@
 # Lambda Function Call
 
-In this step, we are finally going to use an AWS services tool which is Lambda service.
+In this step, we are finally going to use an AWS services tool: Lambda service.
 
-This service allows users to run serverless computation. We have prepared a lambda function called function-test-1 and we will now call it from the REPL.
+This service allows users to run serverless computations. We have prepared a lambda function called function-test-1 and we will now call it from the REPL.
 
 ## Usage
 In your REPL, use the client that we created at the last step to see the lists of operations that you can use. 
 - `lein repl`{{execute}}
 - `(def lambda (aws/client {:api :lambda}))`{{execute}}
-- `(-> (aws/ops lambda) keys sort)` {{execute}}
+- `(-> (aws/ops lambda) keys sort)`{{execute}}
 
 We can see from this the operations what we can perform. 
 
@@ -17,7 +17,11 @@ Now let's try to run our function:
 
 - `(aws/invoke lambda {:op :Invoke :request{:FunctionName "function-test-1"}})`{{execute}}
 
-Let's now use Clojure built-in functions to get the content of the payload (reading the BufferedInputStream). 
+You can see in the result, the status code of the request, and the executed version. 
+Our result is under the key :Payload but in the form of a BufferdInputStream. 
+In order to retrieve the result of our request, we need to parse it with a `slurp` for instance!
+
+Let's parse this request: 
 
 - `(-> (aws/invoke lambda {:op :Invoke :request{:FunctionName "function-test-1"}}) :Payload slurp)`{{execute}}
 
@@ -26,7 +30,7 @@ We can exit now the repl:
 
 ## Final Code
 
-We can summarize the previous code in our main function:
+We can summarize all the previous code in our main function:
 
 <pre class="file" data-filename="aws-api-tutorial/src/aws_api_tutorial/core.clj" 
     data-target="replace">
