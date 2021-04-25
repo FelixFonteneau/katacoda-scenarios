@@ -1,4 +1,6 @@
-Now we will use the [aws-api](https://github.com/cognitect-labs/aws-api) to access AWS from clojure. 
+# Installation of the dependencies
+
+Now we will start using the [aws-api](https://github.com/cognitect-labs/aws-api).
 
 Several dependencies are needed, 
 - `com.cognitect.aws/api`
