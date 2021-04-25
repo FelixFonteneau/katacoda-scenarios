@@ -37,7 +37,7 @@ You should now see a result similar at:
 
 ## Clojure
 
-This tutorial aims is to propose an alternative to the aws-cli. 
+The tutorial aims at proposing an alternative to the aws-cli. 
 
 You can now create a client and check your info. Let's update our main function: 
 
@@ -60,4 +60,4 @@ You can now create a client and check your info. Let's update our main function:
 Let's now run our code! 
 - `lein run`{{execute}}
 
-You should be able to see json format of the user!
+You should be able to see user information in JSON.
