@@ -7,7 +7,9 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "init.sh",
+        "code": "display-init.sh"
       },
       {
         "title": "Step 2",
@@ -27,8 +29,5 @@
   },
   "environment": {
     "uilayout": "editor-terminal"
-  },
-  "backend": {
-    "imageid": "clojure"
   }
 }
