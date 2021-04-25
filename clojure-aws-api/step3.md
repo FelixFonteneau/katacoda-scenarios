@@ -41,13 +41,6 @@ The aim of this tutorial is to propose an alternative to the aws-cli.
 
 You can now launch the REPL `lein repl`{{execute}} and create a client: 
 
-`(require '[cognitect.aws.client.api :as aws])`{{execute}}
-
-
-`(def iam (aws/client {:api :iam}))`{{execute}}
-
-
-`(aws/invoke iam {:op :GetUser})`{{execute}}
 
 <pre class="file" data-filename="aws-api-tutorial/src/aws_api_tutorial/core.clj" 
     data-target="replace">
@@ -57,7 +50,11 @@ You can now launch the REPL `lein repl`{{execute}} and create a client:
 (require '[cognitect.aws.client.api :as aws])
 
 (defn -main 
-    (-> (aws/client {:api :iam})
-        (aws/invoke {:op :GetUser}))
+  "main"
+  [& args]
+  
+  ( -> (aws/client {:api :iam})
+      (aws/invoke {:op :GetUser}))
 )
+
 </pre>
