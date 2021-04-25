@@ -54,9 +54,9 @@ You can now launch the REPL `lein repl`{{execute}} and create a client:
 (ns aws-api-tutorial.core
   (:gen-class))
 
+(require '[cognitect.aws.client.api :as aws]))
 
 (defn -main
-    (require '[cognitect.aws.client.api :as aws]))
-    (-> (def iam (aws/client {:api :iam}))
-        (aws/invoke {:op :GetUser})))
+    (-> (aws/client {:api :iam})
+        (aws/invoke {:op :GetUser}))
 </pre>
