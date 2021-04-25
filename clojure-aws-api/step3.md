@@ -39,7 +39,7 @@ You should now see a result similar at:
 
 The aim of this tutorial is to propose an alternative to the aws-cli. 
 
-You can now launch the REPL `lein repl`{{execute}} and create a client: 
+You can now create a client and check your info. Let's update our main function: 
 
 
 <pre class="file" data-filename="aws-api-tutorial/src/aws_api_tutorial/core.clj" 
@@ -55,6 +55,6 @@ You can now launch the REPL `lein repl`{{execute}} and create a client:
   ( ->  (aws/client {:api :iam})
         (aws/invoke {:op :GetUser})
         (print)))
-
-
 </pre>
+
+Let's now run our code! `lein run`{{execute}}
