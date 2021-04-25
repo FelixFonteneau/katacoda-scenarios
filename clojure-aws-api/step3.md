@@ -12,4 +12,4 @@ We can now set those credentials as environment variables.
 `export AWS_DEFAULT_REGION=eu-north-1`{{execute}}
 
 You should now be able to connect as a tester to AWS using aws-cli.
-`aws iam get-user`
+`aws iam get-user`{{execute}}
