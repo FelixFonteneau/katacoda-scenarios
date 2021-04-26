@@ -2,7 +2,7 @@
   "title": "AWS API with Clojure",
   "description": "Access AWS API tools with Clojure, enhance your scripting experience with the Clojure REPL.",
   "difficulty": "Intermediate",
-  "time": "15 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
