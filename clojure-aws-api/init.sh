@@ -1,7 +1,7 @@
 # install clojure tools (lein)
-curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > lein
-sudo mv lein /usr/local/bin/lein
-sudo chmod a+x /usr/local/bin/lein
+# curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > lein
+# sudo mv lein /usr/local/bin/lein
+# sudo chmod a+x /usr/local/bin/lein
 
 # install clj cli
 sudo apt-get install -y bash curl rlwrap

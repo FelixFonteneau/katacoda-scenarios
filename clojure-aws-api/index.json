@@ -4,6 +4,11 @@
   "difficulty": "Intermediate",
   "time": "20 minutes",
   "details": {
+    "assets": {
+      "host01": [
+        {"file": "lein", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",

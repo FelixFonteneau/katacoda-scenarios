@@ -1,6 +1,6 @@
 # Initialisation
 Before we get started, let's create a Clojure Project. 
-We will use Leiningen, if you want to use other build tools, please skip this part. 
+We will use [Leiningen](https://leiningen.org/) as our build environment (in this tutorial the version 2.9.6), if you want to use other build tools, please skip this part. 
 You will also need to manage the dependencies according to your specific tools.
 
 # Soundcheck
