@@ -1,13 +1,13 @@
 # Set up of the credentials
 In this part of the tutorial, we will set up the system to access AWS services. 
 
-We will use the IAM (Identity and Access Management) service of AWS. A user has been created for this tutorial, with an access key ID, a secret access key, and an associated region.
+We will use the IAM (Identity and Access Management) service of AWS. A user has been created for this tutorial, with an access key ID, a secret access key, and an associated region. When IAM users make calls to AWS, credentials are searched on the system. One location where the credentials can be stored is environment variables. 
 
 _(note that the following key is useless and only serve as an example, no general access or important service is attached to it)_
 
 ## AWS-CLI configuration
 
-We can now set those credentials as environment variables with aws-cli:
+We could manually configure the files but we will use AWS-CLI for simplicity. As the name suggests, AWS-CLI is the command-line interface of AWS. Let's set our credentials as environment variables with aws-cli:
 
 - `aws configure`{{execute}}
 
@@ -58,6 +58,12 @@ You can now create a client and check your info. Let's update our main function:
 </pre>
 
 Let's now run our code! 
+
 - `lein run`{{execute}}
 
 You should be able to see user information in JSON.
+
+## Explanation of the code
+
+`(aws/client {:api :iam})` calls the function aws/client with parameters `:api` and `:iam`. 
+`(aws/invoke {:op :GetUser})` calls the function aws/invoke that takes 2 parameters: a client and an operation. Because of the `->` operator, the output of the previous line is passed as parameter to the function. This means that the first parameter of aws/invoke is actually the client that we actually created. The 2nd parameter is the operation `{:op :GetUser}`. We finally take the output of aws/invoke and print it! 
