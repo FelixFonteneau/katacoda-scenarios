@@ -10,12 +10,18 @@ In your REPL, use the client that we created at the last step to see the lists o
 - `(def lambda (aws/client {:api :lambda}))`{{execute}}
 - `(-> (aws/ops lambda) keys sort)`{{execute}}
 
-We can see from this the operations what we can perform. 
+### Quick explanations
+* `(def lambda (aws/client {:api :lambda}))` creates a client for the AWS Lambda service.
+* `(-> (aws/ops lambda) keys sort)` calls the function keys with parameter the previsouly defined lambda client. The output of the keys is then passed to the sort function. 
+
+We can now see the operations what we can perform. 
 
 ## Lambda function call
 Now let's try to run our function:
 
 - `(aws/invoke lambda {:op :Invoke :request{:FunctionName "function-test-1"}})`{{execute}}
+
+This line of code calls the aws/invoke function. This function takes 2 parameters: a client and an operation. The client is our predefined lambda object. The operation is the invocation of a lambda function. This operation is also defined by a request. This request holds as information the name of the function that we are trying to invoke. 
 
 You can see in the result, the status code of the request, and the executed version. 
 Our result is under the key :Payload but in the form of a BufferdInputStream. 
@@ -24,6 +30,8 @@ In order to retrieve the result of our request, we need to parse it with a `slur
 Let's parse this request: 
 
 - `(-> (aws/invoke lambda {:op :Invoke :request{:FunctionName "function-test-1"}}) :Payload slurp)`{{execute}}
+
+This line is the same as before but passing the object Payload from the output as parameter of the function slurp. 
 
 We can exit now the repl:
 - `(quit)`{{execute}}

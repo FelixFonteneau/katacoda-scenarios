@@ -66,4 +66,4 @@ You should be able to see user information in JSON.
 ## Explanation of the code
 
 `(aws/client {:api :iam})` calls the function aws/client with parameters `:api` and `:iam`. 
-`(aws/invoke {:op :GetUser})` calls the function aws/invoke that takes 2 parameters: a client and an operation. Because of the `->` operator, the output of the previous line is passed as parameter to the function. This means that the first parameter of aws/invoke is actually the client that we actually created. The 2nd parameter is the operation `{:op :GetUser}`. We finally take the output of aws/invoke and print it! 
+`(aws/invoke {:op :GetUser})` calls the function aws/invoke that takes 2 parameters: a client and an operation. Because of the `->` operator, the output of the previous line is passed as parameter to the function. This means that the first parameter of aws/invoke is actually the client that we previously created. The 2nd parameter is the operation `{:op :GetUser}`. We finally take the output of aws/invoke and print it! 
