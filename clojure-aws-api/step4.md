@@ -11,10 +11,10 @@ In your REPL, use the client that we created at the last step to see the lists o
 - `(-> (aws/ops lambda) keys sort)`{{execute}}
 
 ### Quick explanations
-* `(def lambda (aws/client {:api :lambda}))` creates a client for the AWS Lambda service.
-* `(-> (aws/ops lambda) keys sort)` calls the function keys with parameter the previsouly defined lambda client. The output of the keys is then passed to the sort function. 
+* `(def lambda (aws/client {:api :lambda}))` creates a client for the AWS Lambda service and calls it lambda.
+* `(-> (aws/ops lambda) keys sort)` calls the function keys and gives as parameter the previsouly defined lambda client. The output of keys is then passed to the sort function. 
 
-We can now see the operations what we can perform. 
+We can now see the operations what we can perform in alphabetical order. 
 
 ## Lambda function call
 Now let's try to run our function:
