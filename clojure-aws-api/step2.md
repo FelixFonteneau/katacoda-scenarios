@@ -2,11 +2,12 @@
 
 Now we will start using the [aws-api](https://github.com/cognitect-labs/aws-api).
 
-Several dependencies are needed, 
+Several dependencies are for our Clojure project are needed, they are the library of aws-api. 
+First, we have the following necessary libraries to install,
 - `com.cognitect.aws/api`
 - `com.cognitect.aws/endpoints`
 
-and the service(s) of your choice, we will use in this tutorial
+and then, the libraries of the service(s) of your choice, we will use in this tutorial
 - `com.cognitect.aws/lambda` 
 - `com.cognitect.aws/iam` 
 

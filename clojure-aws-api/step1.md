@@ -1,6 +1,7 @@
 # Initialisation
-Before we get started, let's create a Clojure Project. 
-We will use [Leiningen](https://leiningen.org/) as our build environment (in this tutorial the version 2.9.6), if you want to use other build tools, please skip this part. 
+Before we get started, let's create a Clojure Project.
+We will use [Leiningen](https://leiningen.org/) as our build environment (in this tutorial the version 2.9.6). It is a build and dependency management tool for simple configuration projects written in Clojure. It has also a built-in REPL, which is perfect for our case.
+If you want to use other build tools, please skip this part.
 You will also need to manage the dependencies according to your specific tools.
 
 # Soundcheck
@@ -19,15 +20,15 @@ please see documentation to install [Leiningen](https://leiningen.org/) or other
 Then we create a project:
 - `lein new app aws-api-tutorial`{{execute}}
 
-Once done, you should have the main script file here: 
+Once done, you should have the main script file here:
 
-`aws-api-tutorial/src/aws_api_tutorial/core.clj`{{open}} with a Hello World. 
+`aws-api-tutorial/src/aws_api_tutorial/core.clj`{{open}} with a Hello World.
 
-Go to the project directory 
-- `cd aws-api-tutorial`{{execute}} 
+Go to the project directory
+- `cd aws-api-tutorial`{{execute}}
 
 and start the REPL:
-- `lein repl`{{execute}}. 
+- `lein repl`{{execute}}.
 
 You should be able to see the result of the hello world with the function call:
 - `(-main)`{{execute}}
