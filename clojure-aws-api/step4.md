@@ -73,7 +73,7 @@ to see a general view of the integration and usage of this library:
         println))
 
 (defn execute-lambda
-  "Send a request to AWS for the lambda function "function-test-1"
+  "Send a request to AWS for the lambda function function-test-1
   and print the result of this function"
   [& args]
   (-> (aws/invoke lambda {:op :Invoke :request{:FunctionName "function-test-1"}})
